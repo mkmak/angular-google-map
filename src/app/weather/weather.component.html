@@ -1,0 +1,20 @@
+<h5 class="card-text">Current Weather</h5>
+<div class="row">
+    <div class="col-sm-3">
+        <img [src]="getIconUrl(data.weather[0].icon)" alt="Weather Icon">
+    </div>
+    <div class="col-sm-4 mt-3">
+        <div style="color: grey;">{{ date | date: 'EEEE h:mm a' }}</div>
+        <div style="color: grey;">{{ data.weather[0].main }}</div>
+        <div style="color: grey;">{{ data.weather[0].description }}</div>
+    </div>
+    <div class="col-sm-5">
+        <div class="small" style="color: grey;">Temperature: {{ data.main.temp }}&deg;F</div>
+        <div class="small" style="color: grey;">Feels like: {{ data.main.feels_like }}&deg;F</div>
+        <div class="small" style="color: grey;">Temperature max: {{ data.main.temp_max }}&deg;F</div>
+        <div class="small" style="color: grey;">Temperature min: {{ data.main.temp_min }}&deg;F</div>
+        <div class="small" style="color: grey;">Humidity: {{ data.main.humidity }}%</div>
+        <div class="small" style="color: grey;">Wind: {{ data.wind.speed }} mps</div>
+        <div class="small" style="color: grey;">Cloudiness: {{ data.clouds.all }}%</div>
+    </div>
+</div>

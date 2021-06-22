@@ -19,7 +19,7 @@ import { CovidComponent } from './covid/covid.component';
     AppRoutingModule,
     HttpClientModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyDnzK0ZrJICj_ZY4iVDR9wBOl2OwsjPj1E'
+      apiKey: '{goole-api-key}'
     })
   ],
   providers: [],
